@@ -1,0 +1,14 @@
+TODO!
+
+#cd ~/ && rm -rf .vim .vimrc
+#git clone git@github.com:srusskih/myvim.git .vim
+#cd .vim/
+#git submodule init
+#git submodule update
+#sudo apt-get install ack-grep python-pip --yes
+#sudo pip install flake8
+#cd bundle/command-t 
+#sudo apt-get install rake ruby-dev libxslt-dev libxml2-dev --yes
+#sudo gem install nokogiri
+#rake make
+#ln -s ~/.vim/.vimrc.base ~/.vimrc
