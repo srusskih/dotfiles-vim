@@ -10,8 +10,11 @@ git+https://github.com/mattn/webapi-vim.git
 git+https://github.com/scrooloose/nerdtree.git
 git+https://github.com/sjl/gundo.vim.git
 git+https://github.com/tpope/vim-dispatch.git
-git+https://github.com/davidhalter/jedi-vim.git
-git+https://github.com/vim-scripts/ZenCoding.vim.git
+git+https://github.com/davidhalter/jedi-vim.git:w
+
+#git+https://github.com/vim-scripts/ZenCoding.vim.git
+git+http://github.com/bingaman/vim-sparkup.git
+
 git+https://github.com/terryma/vim-multiple-cursors.git
 git+https://github.com/garbas/vim-snipmate.git
 git+https://github.com/bling/vim-airline.git
