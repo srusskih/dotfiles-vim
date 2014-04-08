@@ -1,6 +1,10 @@
 TODO!
 
-#cd ~/ && rm -rf .vim .vimrc
+cd ~/ && rm -rf .vim .vimrc
+virtualenv ~/.virtualenvs/oh-my-vim
+~/.virtualenvs/oh-my-vim/bin/pip install git+https://github.com/gawel/oh-my-vim
+~/.virtualenvs/oh-my-vim/bin/oh-my-vim upgrade
+
 #git clone git@github.com:srusskih/myvim.git .vim
 #cd .vim/
 #git submodule init
