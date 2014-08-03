@@ -1,18 +1,9 @@
-TODO!
-
-cd ~/ && rm -rf .vim .vimrc
-virtualenv ~/.virtualenvs/oh-my-vim
-~/.virtualenvs/oh-my-vim/bin/pip install git+https://github.com/gawel/oh-my-vim
-~/.virtualenvs/oh-my-vim/bin/oh-my-vim upgrade
-
-#git clone git@github.com:srusskih/myvim.git .vim
-#cd .vim/
-#git submodule init
-#git submodule update
-#sudo apt-get install ack-grep python-pip --yes
-#sudo pip install flake8
-#cd bundle/command-t 
-#sudo apt-get install rake ruby-dev libxslt-dev libxml2-dev --yes
-#sudo gem install nokogiri
-#rake make
-#ln -s ~/.vim/.vimrc.base ~/.vimrc
+rm -rf ~/.vim ~/.vimrc
+mkdir ~/.vimrc
+cd ~/.vimrc
+git clone https://github.com/srusskih/dotfiles-vim.git
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+cd bundle/Command-T/ruby/command-t/
+ruby extconf.rb
+make
