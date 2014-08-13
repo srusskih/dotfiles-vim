@@ -15,9 +15,6 @@ filetype off
 syntax on                    " syntax highlighing
 filetype on                  " try to detect filetypes
 filetype plugin indent on    " enable loading indent file for filetype
-let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': [],
-                           \ 'passive_filetypes': [] }
 
 set ls=2
 set path=.,,**
@@ -52,6 +49,8 @@ nmap <leader>jn :%!python -m json.tool<CR>
 
 vmap > >gv
 vmap < <gv
+nmap n nzz
+nmap N Nzz
 
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -82,3 +81,12 @@ let g:gist_get_multiplefile = 1
 let NERDTreeIgnore = ['\~$', '\.pyc$']
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:sparkupExecuteMapping = '<c-z>'
+let g:sparkupNextMapping = '<c-z><c-z>'
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': [] }
+
