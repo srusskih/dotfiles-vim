@@ -1,6 +1,6 @@
 rm -rf ~/.vim ~/.vimrc
-mkdir ~/.vimrc
-cd ~/.vimrc
+mkdir ~/.vim
+cd ~/.vim
 git clone https://github.com/srusskih/dotfiles-vim.git
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
