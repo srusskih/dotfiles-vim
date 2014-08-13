@@ -5,15 +5,17 @@ set nospell
 set novisualbell
 set noerrorbells
 
+filetype off " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+source ~/.vim/dotfiles-vim/plugins.txt
+call vundle#end()            " required
 
 colorscheme molokai
 
-filetype off
-"call pathogen#incubate()
-"call pathogen#helptags()
-
 syntax on                    " syntax highlighing
-filetype on                  " try to detect filetypes
 filetype plugin indent on    " enable loading indent file for filetype
 
 set ls=2
@@ -26,14 +28,12 @@ set shiftwidth=4
 set nu " line number 
 set smartindent
 
-au FileType ruby,javascript,coffee,html,css,htmldjango setlocal softtabstop=2 tabstop=2 shiftwidth=2 expandtab
-au FileType sass setlocal softtabstop=4 tabstop=4 shiftwidth=4 expandtab
+au FileType ruby,javascript,coffee,css,sass,scss,html,htmldjango setlocal softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 au FileType python setlocal expandtab smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 au FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 au FileType html set omnifunc=htmlcomplete#CompleteTags
 au FileType css set omnifunc=csscomplete#CompleteCSS
 au BufRead,BufNewFile Gemfile,Guardfile set syntax=ruby
-
 
 map <F2> :tabprev<CR>
 map <F3> :tabnext<CR>
@@ -86,7 +86,5 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:sparkupExecuteMapping = '<c-z>'
 let g:sparkupNextMapping = '<c-z><c-z>'
-let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': [],
-                           \ 'passive_filetypes': [] }
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
 
