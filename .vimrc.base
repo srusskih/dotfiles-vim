@@ -88,3 +88,7 @@ let g:sparkupExecuteMapping = '<c-z>'
 let g:sparkupNextMapping = '<c-z><c-z>'
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
 
+" Racer
+set hidden
+let g:racer_cmd = "$HOME/.vim/bundle/racer/target/release/racer"
+let $RUST_SRC_PATH="/home/s_russkih/src/rust/src"
