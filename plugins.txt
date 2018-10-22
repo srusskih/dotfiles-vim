@@ -1,7 +1,7 @@
 Plugin 'gmarik/Vundle.vim'
 Plugin 'https://github.com/vim-scripts/virtualenv.vim.git'
 Plugin 'https://github.com/tomtom/tlib_vim.git'
-Plugin 'https://github.com/wincent/Command-T'
+Plugin 'https://github.com/wincent/command-t'
 Plugin 'https://github.com/tpope/vim-git.git'
 Plugin 'https://github.com/scrooloose/syntastic.git'
 Plugin 'https://github.com/vim-scripts/surround.vim.git'
@@ -12,7 +12,7 @@ Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/sjl/gundo.vim.git'
 Plugin 'https://github.com/tpope/vim-dispatch.git'
 Plugin 'https://github.com/davidhalter/jedi-vim.git'
-Plugin 'https://github.com/bingaman/vim-sparkup.git'
+Plugin 'https://github.com/rstacruz/sparkup', {'rtp': 'vim/'} 
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 Plugin 'https://github.com/garbas/vim-snipmate.git'
 Plugin 'https://github.com/bling/vim-airline.git'
@@ -22,5 +22,13 @@ Plugin 'https://github.com/tpope/vim-fugitive'
 Plugin 'https://github.com/srusskih/molokai.vim.git'
 Plugin 'https://github.com/honza/vim-snippets.git'
 Plugin 'https://github.com/tpope/vim-commentary.git'
+Plugin 'https://github.com/godlygeek/tabular.git'
+
+" Rust
 Plugin 'https://github.com/wting/rust.vim.git'
 Plugin 'https://github.com/phildawes/racer.git'
+
+" clojure
+Plugin 'https://github.com/tpope/vim-fireplace'
+Plugin 'https://github.com/tpope/vim-salve'
+Plugin 'bhurlow/vim-parinfer'
