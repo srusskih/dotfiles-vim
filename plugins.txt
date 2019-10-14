@@ -1,34 +1,45 @@
-Plugin 'gmarik/Vundle.vim'
-Plugin 'https://github.com/vim-scripts/virtualenv.vim.git'
-Plugin 'https://github.com/tomtom/tlib_vim.git'
-Plugin 'https://github.com/wincent/command-t'
-Plugin 'https://github.com/tpope/vim-git.git'
-Plugin 'https://github.com/scrooloose/syntastic.git'
-Plugin 'https://github.com/vim-scripts/surround.vim.git'
-Plugin 'https://github.com/mattn/gist-vim.git'
-Plugin 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
-Plugin 'https://github.com/mattn/webapi-vim.git'
-Plugin 'https://github.com/scrooloose/nerdtree.git'
-Plugin 'https://github.com/sjl/gundo.vim.git'
-Plugin 'https://github.com/tpope/vim-dispatch.git'
-Plugin 'https://github.com/davidhalter/jedi-vim.git'
-Plugin 'https://github.com/rstacruz/sparkup', {'rtp': 'vim/'} 
-Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
-Plugin 'https://github.com/garbas/vim-snipmate.git'
-Plugin 'https://github.com/bling/vim-airline.git'
-Plugin 'https://github.com/ervandew/supertab.git'
-Plugin 'https://github.com/mileszs/ack.vim.git'
-Plugin 'https://github.com/tpope/vim-fugitive'
-Plugin 'https://github.com/srusskih/molokai.vim.git'
-Plugin 'https://github.com/honza/vim-snippets.git'
-Plugin 'https://github.com/tpope/vim-commentary.git'
-Plugin 'https://github.com/godlygeek/tabular.git'
+Plug 'https://github.com/vim-scripts/surround.vim.git'
+Plug 'https://github.com/scrooloose/syntastic.git'
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/terryma/vim-multiple-cursors.git'
+Plug 'https://github.com/sjl/gundo.vim.git', {'on': 'GundoToggle'}
+Plug 'ctrlpvim/ctrlp.vim'
+
+" gist
+Plug 'https://github.com/mattn/webapi-vim.git'
+Plug 'https://github.com/mattn/gist-vim.git'
+
+
+" Plugin 'https://github.com/tpope/vim-dispatch.git'
+
+Plug 'https://github.com/bling/vim-airline.git'
+Plug 'https://github.com/ervandew/supertab.git'
+Plug 'https://github.com/mileszs/ack.vim.git'
+Plug 'https://github.com/MarcWeber/vim-addon-mw-utils.git'
+Plug 'https://github.com/tomtom/tlib_vim'
+Plug 'https://github.com/honza/vim-snippets.git'
+Plug 'https://github.com/garbas/vim-snipmate.git'
+Plug 'https://github.com/tpope/vim-commentary.git'
+Plug 'https://github.com/godlygeek/tabular.git'
+
+" HTML
+Plug 'https://github.com/rstacruz/sparkup', {'rtp': 'vim/', 'for': 'html'} 
+
+" Colors
+Plug 'https://github.com/srusskih/molokai.vim.git'
+
+" Python
+Plug 'https://github.com/vim-scripts/virtualenv.vim.git', {'for': 'python'}
+Plug 'https://github.com/davidhalter/jedi-vim.git', {'for': 'python'}
 
 " Rust
-Plugin 'https://github.com/wting/rust.vim.git'
-Plugin 'https://github.com/phildawes/racer.git'
+"Plug 'https://github.com/wting/rust.vim.git', {'for': 'rust'}
+"Plug 'https://github.com/phildawes/racer.git', {'for': 'rust'}
 
 " clojure
-Plugin 'https://github.com/tpope/vim-fireplace'
-Plugin 'https://github.com/tpope/vim-salve'
-Plugin 'bhurlow/vim-parinfer'
+" Plug 'https://github.com/tpope/vim-fireplace', {'for': 'clojure'}
+" Plug 'https://github.com/tpope/vim-salve', {'for': 'clojure'}
+Plug 'bhurlow/vim-parinfer', {'for': 'clojure'}
+Plug 'bhurlow/vim-parinfer', {'for': 'clojure'}
+Plug 'guns/vim-sexp',    {'for': 'clojure'}
+Plug 'liquidz/vim-iced', {'for': 'clojure'}

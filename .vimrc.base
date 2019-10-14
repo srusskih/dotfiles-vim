@@ -8,15 +8,15 @@ set noerrorbells
 filetype off " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 source ~/.vim/dotfiles-vim/plugins.txt
-call vundle#end()            " required
+call plug#end()            " required
+
+
+"syntax on                    " syntax highlighing
+"filetype plugin indent on    " enable loading indent file for filetype
 
 colorscheme molokai
-
-syntax on                    " syntax highlighing
-filetype plugin indent on    " enable loading indent file for filetype
 
 set ls=2
 set path=.,,**
@@ -87,6 +87,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:sparkupExecuteMapping = '<c-z>'
 let g:sparkupNextMapping = '<c-z><c-z>'
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': [] }
+let g:iced_enable_default_key_mappings = v:true
 
 " Racer
 set hidden

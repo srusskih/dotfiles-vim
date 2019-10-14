@@ -3,8 +3,7 @@ mkdir ~/.vim
 cd ~/.vim
 git clone https://github.com/srusskih/dotfiles-vim.git
 ln -s  ~/.vim/dotfiles-vim/.vimrc.base ~/.vimrc
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-cd ~/.vim/bundle/Command-T/ruby/command-t/
-ruby extconf.rb
-make
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+vim +PlugInstall +qall
